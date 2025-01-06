@@ -1,8 +1,11 @@
 import '@styles/globals.css';
 
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
+
 export const metadata = {
     title: 'ShortPost',
-    description: 'Discover and Share Short Posts '
+    description: 'Discover and Share Short Post'
 }
 
 export default function RootLayout({children}){
@@ -14,6 +17,7 @@ export default function RootLayout({children}){
             </div>
 
             <main className='app'>
+                <Nav />
                 {children}
             </main>
         </body>
